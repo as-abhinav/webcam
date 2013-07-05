@@ -1,0 +1,38 @@
+<!doctype>
+<html>
+  <head>
+  <script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+  <script src="js/base64.js" type="text/javascript"></script>
+  <script src="js/canvas2image.js" type="text/javascript"></script>
+
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <article>
+      <input type="file" accept="image/*;capture=camera"/>
+      <section>
+        <video id="video" width="320" height="200" autoplay></video>
+      </section>
+      <section class="btn">
+          <button id="btnClick">Click Me!</button>
+      </section>
+      <section>
+        <canvas id="canvas" width="320" height="240"></canvas>
+      </section>
+      <section class="btn" id="filterBtns">
+          <button data-filter-type="bnw">B&W</button>
+          <button data-filter-type="brightness">Bright</button>
+          <button data-filter-type="darkness">Dark</button>
+          <button data-filter-type="sepia">Sepia</button>
+          <button data-filter-type="threshold">Threshold</button>
+          <button data-filter-type="invert">Invert</button>
+      </section>
+      <section class="btn">
+          <button id="save">Save</button>
+      </section>
+    </article>
+  </body>
+  <script src="js/app.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,33 @@
+body {
+  font-family: "Verdana";
+  font-size: 9pt;
+}
+
+header {
+  padding: 15px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+  background-color: rgb(27, 161, 226);
+  color: #fff;
+}
+
+header h1 {
+  font-size: 14pt;
+}
+
+
+article {
+  margin: auto;
+  margin-top: 20px;
+}
+article section{
+  float: left;
+  width: 340px;
+}
+article section.btn{
+  width: 100px;
+}
+article section.btn button{
+  display: block;
+  width: 90%;
+  text-align: center;
+}
